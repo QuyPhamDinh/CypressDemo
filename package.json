@@ -1,0 +1,23 @@
+{
+  "name": "cypresspractice",
+  "version": "1.0.0",
+  "description": "cypress demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --spec cypress/e2e/spec_demo.cy.ts --browser firefox --headed && npx mochawesome-merge ./cypress/results/*.json -o ./cypress/results/output.json && npx marge ./cypress/results/output.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.11.0",
+    "cypress-fill-command": "^1.0.2",
+    "cypress-mochawesome-reporter": "^3.2.3",
+    "cypress-watch-and-reload": "^1.10.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "typescript": "^4.8.4"
+  }
+}
