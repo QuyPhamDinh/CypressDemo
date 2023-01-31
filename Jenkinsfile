@@ -1,7 +1,5 @@
 pipeline{
-    agent{
-        label "Any"
-    }
+    agent any
     parameters{
 
         string(name: 'SPEC', defaultValue: "cypress/e2e/**/*spec*.{js,ts}", description: "Enter path of SPEC")
