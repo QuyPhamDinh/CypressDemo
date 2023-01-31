@@ -3,7 +3,8 @@ pipeline{
         label "Any"
     }
     parameters{
-        string(name: 'SPEC', defaultValue: "cypress/e2e/**/*spec*.{js,ts}", description: "Enter path of SPEC"),
+
+        string(name: 'SPEC', defaultValue: "cypress/e2e/**/*spec*.{js,ts}", description: "Enter path of SPEC")
         choice(name: 'BROWSER', choices:['chrome','firefox', 'edge'] , description:"Select the browser")
     }
 
