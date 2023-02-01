@@ -23,7 +23,7 @@ pipeline{
         stage('Testing'){
             steps{
                 sh "npm i"
-                sh "npx cypress run --browser=${BROWSER} --spec=${SPEC}"
+                sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
 
@@ -33,5 +33,10 @@ pipeline{
             }
         }
         
+    }
+    post{
+        always{
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'cypress/results/', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: 'Cypress Demo Report', useWrapperFileDirectly: true])
+        }
     }
 }
