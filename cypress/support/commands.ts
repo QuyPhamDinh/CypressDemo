@@ -38,6 +38,12 @@
 
 // import 'cypress-fill-command'
 
+declare namespace Cypress {     
+        interface Chainable{
+            login: (userName:string, password:string) => void
+        }   
+}
+
 Cypress.Commands.add('login', (userName, password) => {
     cy.fixture('example').then((el)=>{
 

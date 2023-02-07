@@ -1,13 +1,5 @@
 export {};
 
-declare global {
-    namespace Cypress{
-        interface Chainable{
-            login: (userName:string, password:string) => void
-        }
-    }
-}
-
 // Cypress.Commands.add('login', (userName, password) => {
 //     cy.fixture('example').then((el)=>{
 
@@ -16,3 +8,12 @@ declare global {
 //         cy.get(el.loginBtn).should('be.visible').click()
 //     })
 // })
+
+// declare global {
+//     namespace Cypress{
+//         interface Chainable{
+//             login: (userName:string, password:string) => void
+//         }
+//     }
+// }
+
