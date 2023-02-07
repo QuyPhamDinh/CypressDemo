@@ -1,6 +1,5 @@
-# CypressDemo
-Integrate BrowserStack
 
+# CypressDemo
 install Cypress : npm install cypress --save-dev
 
 run on local : npx cypress run --spec cypress/e2e/spec_demo.cy.ts
@@ -9,6 +8,11 @@ run with specified browser  : npx cypress run --spec cypress/e2e/spec_demo.cy.ts
 
 run on browser stack : browserstack-cypress run
 
+# Integrate BrowserStack
+npm i -g browserstack-cypress-cli
+ browserstack-cypress run 
+ browserstack-cypress run --sync --specs ./cypress/integration/spec_demo.cy.ts
+ 
 
 # Parallel
 
