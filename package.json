@@ -4,7 +4,7 @@
   "description": "cypress demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress run --spec cypress/e2e/spec_login_pom.ts --browser chrome",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --spec cypress/e2e/spec_demo.cy.ts --browser firefox --headed && npx mochawesome-merge ./cypress/results/*.json -o ./cypress/results/output.json && npx marge ./cypress/results/output.json"
   },

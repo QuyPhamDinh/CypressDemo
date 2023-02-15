@@ -30,3 +30,11 @@ In your package.json add a new script:
 }
 
 npm run cy:parallel
+
+# Docker 
+
+Build your own docker image
+docker build -f ./DockerFile -t cypress .
+
+Run docker image
+docker run --network host --rm -v $(pwd):/home/app/ --entrypoint npm cypress run test

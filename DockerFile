@@ -1,0 +1,3 @@
+FROM cypress/base:16.18.1
+WORKDIR /home/app/
+ENTRYPOINT ["npm","run","test"]
