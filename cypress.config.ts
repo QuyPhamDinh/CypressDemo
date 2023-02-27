@@ -17,10 +17,6 @@ export default defineConfig({
     baseUrl: 'https://www.saucedemo.com/',
     defaultCommandTimeout: 7000,
     "chromeWebSecurity": false,
-    // setupNodeEvents(on, config) {
-    //   // implement node event listeners here
-    //   require('cypress-mochawesome-reporter/plugin')(on);
-    // },
     specPattern: 'cypress/e2e/**/*spec*.{js,ts}',
     // setupNodeEvents(on, config) {
     //   require('cypress-mochawesome-reporter/plugin')(on);
