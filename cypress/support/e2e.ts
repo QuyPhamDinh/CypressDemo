@@ -20,7 +20,7 @@ import 'cypress-mochawesome-reporter/register';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-// import './login.actions'
+import './login.actions'
 
 beforeEach(() =>{
     cy.visit('/')

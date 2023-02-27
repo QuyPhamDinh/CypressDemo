@@ -5,6 +5,7 @@ describe('empty spec', () => {
   it('login sauce lab demo with standard user', () => {
     cy.fixture('example').then((el)=>{
       cy.login(el.standard, el.password)
+
       cy.url().should('include','inventory.html')
     })
   })
